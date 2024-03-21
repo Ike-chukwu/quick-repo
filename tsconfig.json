@@ -20,6 +20,10 @@
       }
     ],
     "paths": {
+      "@/icons/*": ["./src/components/icons/*"],
+      "@/ui/*": ["./src/components/ui/*"],
+      "@/molecules/*": ["./src/components/molecules/*"],
+
       "@/*": ["./src/*"]
     }
   },

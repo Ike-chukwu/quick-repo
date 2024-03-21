@@ -3,9 +3,10 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import Hamburger from "../icons/Hamburger";
+import { Button } from "@/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/ui/sheet";
+import Hamburger from "@/icons/Hamburger";
+import Container from "@/ui/container";
 
 const Navbar: React.FC = () => {
   const isOpen = useRef(false);
@@ -31,8 +32,8 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="">
-      <div className="hidden px-4 py-10 mx-auto fixed w-full top-0 left-0 z-[1000] xl:block">
-        <div className="flex items-center justify-between">
+      <div className="hidden  py-10 mx-auto fixed w-full top-0 left-0 z-[1000] xl:block backdrop-blur-lg">
+        <Container className="flex items-center justify-between">
           <div className="flex">
             <Link href="/" className="w-[204px] h-[60px] relative block">
               <Image
@@ -93,11 +94,11 @@ const Navbar: React.FC = () => {
               Create Account
             </Button>
           </div>
-        </div>
+        </Container>
       </div>
 
       {/* Mobile menu */}
-      <div className="btwn fixed top-0 left-0 w-full z-[1000] px-2 py-5 xl:hidden">
+      <div className="btwn backdrop-blur-lg fixed top-0 left-0 w-full z-[1000] px-4 py-5 xl:hidden">
         <Link href="/" className="w-[119px] h-[35px] relative block">
           <Image
             fill

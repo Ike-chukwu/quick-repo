@@ -24,6 +24,7 @@ module.exports = {
       "desktop-med": "1350px",
       "desktop-wide": "1440px",
       "2xl": "1536px",
+      "3xl": "1700px",
     },
     extend: {
       fontFamily: {
@@ -32,6 +33,7 @@ module.exports = {
 
       colors: {
         pry: {
+          100: "#FFFBEF",
           DEFAULT: "#FFCA22",
         },
         sec: {
