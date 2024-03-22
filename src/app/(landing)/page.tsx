@@ -6,6 +6,8 @@ import TwoLocs from "@/icons/TwoLocs";
 import ImageBox from "@/molecules/ImageBox";
 import Badge from "@/molecules/home/Badge";
 import GroupedClasses from "@/molecules/home/GroupedClasses";
+import Pricings from "@/molecules/home/Pricings";
+import TopBlogs from "@/molecules/home/TopBlogs";
 import Container from "@/ui/container";
 
 const badges = [
@@ -59,7 +61,7 @@ export default function Home() {
           Choose Your Fitness, Your Way
         </h2>
 
-        <p className="w-4/5 mx-auto text-center md:w-1/3">
+        <p className="w-4/5 mx-auto text-center lg:w-1/3">
           We Have A Variety Of Fitness Options For You To Choose From,
           Ultimately Helping You Live A Healthier Lifestyle.
         </p>
@@ -72,6 +74,10 @@ export default function Home() {
       </Container>
 
       <GroupedClasses />
+
+      <Pricings />
+
+      <TopBlogs />
     </main>
   );
 }
