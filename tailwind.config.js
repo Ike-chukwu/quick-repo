@@ -36,6 +36,7 @@ module.exports = {
           100: "#FFFBEF",
           DEFAULT: "#FFCA22",
         },
+        customGray: "#F7F7F7",
         sec: {
           DEFAULT: "#241D05",
         },
