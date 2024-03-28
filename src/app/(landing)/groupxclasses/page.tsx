@@ -49,7 +49,7 @@ const page = () => {
             wellness and vitality.
           </p>
 
-          <InputWithButton />
+          <InputWithButton inputClassName="" btnClassName="p-4" />
         </div>
       </Container>
     </main>
